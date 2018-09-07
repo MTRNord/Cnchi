@@ -58,8 +58,8 @@ class Nvidia390xx(Hardware):
     def get_packages():
         """ Get all required packages """
         pkgs = ["nvidia-390xx", "libvdpau"]
-        if os.uname()[-1] == "x86_64":
-            pkgs.extend(["lib32-nvidia-390xx-utils", "lib32-libvdpau"])
+        #if os.uname()[-1] == "x86_64":
+        #    pkgs.extend(["lib32-nvidia-390xx-utils", "lib32-libvdpau"])
         return pkgs
 
     @staticmethod
